@@ -1,6 +1,11 @@
 {
   "name": "tsc-recurent-paths",
   "version": "1.0.0",
+  "scripts": {
+    "error-when-dist-is-exsist": "rollup -c rollup.config.mjs && rollup -c rollup.config.mjs",
+    "add-outdir-option-will-success": "rollup -c rollup.config.add-outdir-option.mjs",
+    "remove-index-input-will-sucess": "rollup -c rollup.config.remove-index-input.mjs"
+  },
   "exports": {
     "./a": "./src/a.ts",
     "./b": "./src/b.ts"
