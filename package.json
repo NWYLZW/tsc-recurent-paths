@@ -1,0 +1,16 @@
+{
+  "name": "tsc-recurent-paths",
+  "version": "1.0.0",
+  "exports": {
+    "./a": "./src/a.ts",
+    "./b": "./src/b.ts"
+  },
+  "dependencies": {
+    "tsc-recurent-paths": "file:."
+  },
+  "devDependencies": {
+    "rollup": "^4.13.0",
+    "rollup-plugin-dts": "6.1.0",
+    "typescript": "^5.4.5"
+  }
+}
