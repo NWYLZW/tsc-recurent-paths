@@ -7,12 +7,7 @@ export default {
         b: './src/b.ts'
     },
     output: [
-        { dir: 'dist' },
-        {
-          dir: 'dist',
-          entryFileNames: ({ name }) => `${name.replace(/^src\//, '')}.esm.d.ts`,
-          preserveModules: true
-        }
+        { dir: 'dist' }
     ],
     plugins: [
         dts({ tsconfig: './tsconfig.json' }),
